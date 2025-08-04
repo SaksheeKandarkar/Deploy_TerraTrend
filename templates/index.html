@@ -46,13 +46,23 @@
             margin-top: 20px;
             text-align: center;
         }
+
+        /* Styling for the new button section */
+        .link-button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .launch-button {
+            width: 100%;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="form-container">
         <h1 class="text-center mb-4">House Price Prediction</h1>
         <form method="POST">
-            <!-- Numerical Inputs -->
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -86,7 +96,6 @@
                 </div>
             </div>
 
-            <!-- More form groups in similar row-column arrangement -->
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -117,7 +126,6 @@
                 </div>
             </div>
 
-            <!-- Other Features -->
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -165,6 +173,16 @@
             <h2>Predicted Price: {{ prediction }} Lacs</h2>
         </div>
         {% endif %}
+        
+        <div class="link-button-container">
+            <a href="https://public.tableau.com/views/TERRATRENDDashbord/Dashboard12?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+            " target="_blank" class="btn btn-secondary launch-button">
+                Launch Website
+            </a>
+        </div>
+        
     </div>
 </body>
 </html>
+
+   
